@@ -136,7 +136,7 @@ st.video("https://www.youtube.com/watch?v=CjxNsYAQNf8")
 
 st.markdown("""
     <div style="background: rgba(0,0,0,0.7); padding: 25px; border-radius: 15px; border-left: 5px solid #ffd700; border-right: 5px solid #ff0000;">
-        <h3 style="color: #ffd700; text-shadow: 0 0 10px #f00; margin-top: 0;">🎖️ HỒ SƠ CHIẾN BINH VVIP</h3>
+        <h3 style="color: #ffd700; text-shadow: 0 0 10px #f00; margin-top: 0;">🎖️ Thông Tin</h3>
         <p><b>- Chủ sở hữu:</b> Mạnh-----Thành-----Hồng</p>
         <p><b>- Trạng thái:</b> Hoạt động</p>
         <p><b>- Công nghệ:</b> Python - Github</p>
