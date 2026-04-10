@@ -2,7 +2,7 @@ import streamlit as st
 import random
 
 # --- CẤU HÌNH GIAO DIỆN GAMING VVIP ---
-st.set_page_config(page_title="Vũ Trụ VVIP - Mạnh Thành Hồng", page_icon="👑", layout="centered")
+st.set_page_config(page_title="Hello Teacher", page_icon="👑", layout="centered")
 
 # Nhúng CSS "Siêu Cấp Thượng Hạng"
 st.markdown("""
@@ -116,33 +116,33 @@ if 'authenticated' not in st.session_state:
     st.session_state['authenticated'] = False
 
 def check_password():
-    if st.session_state["password"] == "manhvvip": # Mật khẩu VVIP
+    if st.session_state["password"] == "manh1234": # Mật khẩu VVIP
         st.session_state["authenticated"] = True
         st.balloons()
     else:
-        st.error("🚨 QUYỀN TRUY CẬP VVIP BỊ TỪ CHỐI! MÃ LỖI: 403_VVIP.")
+        st.error("Mật khẩu sai")
 
 if not st.session_state['authenticated']:
-    st.markdown('<p class="gaming-title">⚡ VIDEO CỦA MẠNH THÀNH HỒNG ⚡</p>', unsafe_allow_html=True)
+    st.markdown('<p class="gaming-title">', unsafe_allow_html=True)
     st.write("---")
-    st.text_input("NHẬP MÃ TRUY CẬP VVIP:", type="password", key="password", on_change=check_password)
-    st.info("🔥 Mật khẩu là manhvvip")
+    st.text_input("NHẬP MÃ", type="password", key="password", on_change=check_password)
+    st.info("🔥 Mật khẩu là manh1234")
     st.stop()
 
 # --- NỘI DUNG ---
-st.markdown('<p class="gaming-title">🔥 PROJECT: SCRIBBLES AND INK 🔥</p>', unsafe_allow_html=True)
+st.markdown('<p class="gaming-title">🔥Tin học </p>', unsafe_allow_html=True)
 st.snow()
 st.video("https://www.youtube.com/watch?v=CjxNsYAQNf8")
 
 st.markdown("""
     <div style="background: rgba(0,0,0,0.7); padding: 25px; border-radius: 15px; border-left: 5px solid #ffd700; border-right: 5px solid #ff0000;">
         <h3 style="color: #ffd700; text-shadow: 0 0 10px #f00; margin-top: 0;">🎖️ HỒ SƠ CHIẾN BINH VVIP</h3>
-        <p><b>- Chủ sở hữu:</b> Mạnh Thành Hồng</p>
-        <p><b>- Trạng thái:</b> Đã kích hoạt chế độ Gaming Ultra Ultimate</p>
-        <p><b>- Công nghệ:</b> Python Streamlit VVIP Limited Edition</p>
+        <p><b>- Chủ sở hữu:</b> Mạnh-----Thành-----Hồng</p>
+        <p><b>- Trạng thái:</b> Hoạt động</p>
+        <p><b>- Công nghệ:</b> Python - Github</p>
     </div>
 """, unsafe_allow_html=True)
 
-if st.button("🔴 THOÁT HỆ THỐNG VVIP"):
+if st.button("🔴 THOÁT "):
     st.session_state['authenticated'] = False
     st.rerun()
